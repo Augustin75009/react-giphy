@@ -5,7 +5,10 @@ class GifList extends Component {
   renderList(props) {
     return (
       this.props.gifs.map((gif) => {
-        return <Gif id={gif.id} key={gif.id} selectGif={this.props.selectGif} />;
+        return <Gif
+          id={gif.id}
+          key={gif.id}
+          selectGif={this.props.selectGif} />;
       })
     );
   }
